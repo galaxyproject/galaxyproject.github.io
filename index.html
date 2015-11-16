@@ -7,20 +7,19 @@
 </head>
 <body>
 	<div id="everything">
-		<div id="masthead">
-			<div id="masthead-inner">
-				<div class="title">
-					<a href="http://usegalaxy.org/">
-						<img src="static/galaxyIcon_noText.png" style="width: 26px; vertical-align: bottom;" border="0">
-						Galaxy
-					</a>
-				</div>
+		<div id="hero">
+			<div class="title">
+				<a href="http://usegalaxy.org/">
+					<img
+					src="https://wiki.galaxyproject.org/Images/Logos?action=AttachFile&do=get&target=GalaxyNewLogo_GalaxyProject_Trans.png">
+				</a>
 			</div>
 		</div>
+
+		<div id="tagline">
+			Data intensive biology <em>for&nbsp;everyone.</em>
+		</div>
 		<div id="content">
-			<div id="tagline">
-				Data intensive biology <em>for&nbsp;everyone.</em>
-			</div>
 			<h2>Open Source Software Projects</h2>
 			<p>
 				The Galaxy Project has produced numerous open source software offerings to help you build your
@@ -32,24 +31,19 @@
 			<h3>Human-Friendly Bioinformatics</h3>
 			<p>
 				<img class="pimg" align="left" src="https://wiki.galaxyproject.org/Images/GalaxyLogo?action=AttachFile&do=get&target=galaxy_project_logo.jpg" >
-				<a href="https://github.com/galaxyproject/galaxy">Galaxy</a>
-				is our first and primary product, an open source (AFL)
-				workflow engine enabling rapid Bioinformatics Analysis on
-				your compute infrastructure. Galaxy itself enables you or
-				your researchers to do reproducible bioinformatic analyses,
-				an absolute necessity in the realm of scientific analysis.
+				<a href="https://github.com/galaxyproject/galaxy">Galaxy</a> is our first and primary product, an open
+				source (AFL) workflow engine enabling rapid Bioinformatics Analysis on your compute infrastructure.
+				Galaxy itself enables you or your researchers to do reproducible bioinformatic analyses, an absolute
+				necessity in the realm of scientific analysis.
 			</p>
 			<p>
-				Galaxy additionally allows design and execution of complex
-				MapReduce-type workflows, giving power users command of
-				complex pipelines, and all of your users the ability to remix
-				analyses to suit their own needs.
+				Galaxy additionally allows design and execution of complex MapReduce-type workflows, giving power users
+				command of complex pipelines, and all of your users the ability to remix analyses to suit their own
+				needs.
 			</p>
 			<p>
-				All of the work researchers do on a Galaxy instance is
-				exportable and transferable to other Galaxy instances,
-				allowing them security and peace of mind that their data is
-				under their control.
+				All of the work researchers do on a Galaxy instance is exportable and transferable to other Galaxy
+				instances, allowing them security and peace of mind that their data is under their control.
 			</p>
 			<hr />
 
@@ -63,9 +57,11 @@
 				<a href="https://images.galaxyproject.org/planemo/">Virtual Machines</a>,
 				a base <a href="https://hub.docker.com/r/bgruening/galaxy-stable/">Docker Image</a>, and a number of
 				variant <a href="https://github.com/search?q=user%3Abgruening+docker-galaxy">Docker Galaxy Flavours</a>
-				specialised for different types of analysis.
+				specialised for different types of analysis. If you've elected to do a "bare metal" deployment, the
+				<a href="https://github.com/galaxyproject/usegalaxy-playbook">Ansible roles</a> we've published, 
+				and <a href="https://github.com/galaxyproject/gravity">Gravity</a> (a Galaxy supervisord configuation
+				manager) may ease your deployment experience.
 			</p>
-
 			<h4>for the Cloud</h4>
 			<p>
 				<img class="pimg" align="left" src="https://wiki.galaxyproject.org/Images/GalaxyLogos?action=AttachFile&do=get&target=cloudman-logo.png" >
@@ -76,13 +72,21 @@
 				entire lifecycle of your temporary compute infrastructure, from instantiation, to dynamic scaling, to
 				cleanup of resources when you're done with your analysis.
 			</p>
-
 			<h4>for Enterprise-grade Galaxies</h4>
-			<p>For SysAdmins and HPC/Cluster maintainers, the Galaxy Project
-			has built a few tools to help ease the installation process. 
+			<p>
+				<img class="pimg" align="left" src="https://wiki.galaxyproject.org/Images/GalaxyLogos?action=AttachFile&do=get&target=pulsar_transparent.png">
+				For SysAdmins and HPC/Cluster maintainers, the Galaxy workflow engine interacts with DRMAA
+				Compatible Schedulers, and has native support for HTCondor. The Galaxy Project has also built a few
+				tools to help ease your installation process. <a href="https://github.com/galaxyproject/pulsar">Pulsar</a> allows you to have
+				Galaxy run jobs on remote systems (including Windows), without a shared file system. For your
+				configuration and deployment needs, we've written <a href="https://github.com/galaxyproject/infrastructure-playbook">
+				Ansible playbooks</a> and even published the <a href="https://github.com/galaxyproject/usegalaxy-playbook">
+				ones we use to deploy UseGalaxy.org</a>. There are <a href="https://github.com/galaxyproject/ansible-galaxy-tools">
+				further sets of roles</a> to help you manage all of the tools your users will ask you for.
 			</p>
-
 			<hr />
+
+
 
 			<h3>Galaxy Tools: Use and Development</h3>
 			<h4>The Toolshed</h4>
@@ -107,6 +111,13 @@
 				getting your tools <a href="http://planemo.readthedocs.org/en/latest/publishing.html">published in our toolshed and available</a>
 				to people around the world!
 			</p>
+
+			<h3>Galaxy Tools: Reproducibility</h3>
+			<p>
+				For the Galaxy Project, nothing is more important than reproducibility. A large part of this is helping
+				ensure that if a specific tool can be installed once, that anyone, anywhere will be able to reproduce
+				that analysis on their own instances of our platform.
+			</p>
 			<h4>StarForge</h4>
 			<p>
 				<a href="https://github.com/galaxyproject/starforge/">StarForge</a> exists to build Galaxy dependencies,
@@ -126,11 +137,8 @@
 				binaries. Say you need a particular version of a perl package,
 				but are concerned that the author might one day remove it, the CPC is the
 				<a href="https://github.com/erasche/community-package-cache">resource you want</a>!
-			</P>
-
+			</p>
 			<hr />
-
-
 
 
 			<h3>Build on top of Galaxy</h3>
@@ -142,9 +150,7 @@
 			</p>
 			
 
-
-
 		</div>
 	</div>
-	</body>
+</body>
 </html>
