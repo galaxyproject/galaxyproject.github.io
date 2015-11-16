@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>The Galaxy Project: Online Bioinformatics Analysis for Everyone</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="static/style.css" media="screen" rel="Stylesheet" type="text/css">
+</head>
+<body>
+	<div id="everything">
+		<div id="masthead">
+			<div id="masthead-inner">
+				<div class="title">
+					<a href="http://usegalaxy.org/">
+						<img src="static/galaxyIcon_noText.png" style="width: 26px; vertical-align: bottom;" border="0">
+						Galaxy
+					</a>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div id="tagline">
+				Data intensive biology <em>for&nbsp;everyone.</em>
+			</div>
+			<h2>Open Source Software Projects</h2>
+			<p>
+				The Galaxy Project has produced numerous open source software offerings to help you build your
+				bioinformatics analysis infrastructure. Our software covers the gamut from helping you integrate new
+				software into our platform, to a production-ready engine to run those programmes in complex MapReduce
+				workflows.
+			</p>
+
+			<h3>Human-Friendly Bioinformatics</h3>
+			<p>
+				<img class="pimg" align="left" src="https://wiki.galaxyproject.org/Images/GalaxyLogo?action=AttachFile&do=get&target=galaxy_project_logo.jpg" >
+				<a href="https://github.com/galaxyproject/galaxy">Galaxy</a>
+				is our first and primary product, an open source (AFL)
+				workflow engine enabling rapid Bioinformatics Analysis on
+				your compute infrastructure. Galaxy itself enables you or
+				your researchers to do reproducible bioinformatic analyses,
+				an absolute necessity in the realm of scientific analysis.
+			</p>
+			<p>
+				Galaxy additionally allows design and execution of complex
+				MapReduce-type workflows, giving power users command of
+				complex pipelines, and all of your users the ability to remix
+				analyses to suit their own needs.
+			</p>
+			<p>
+				All of the work researchers do on a Galaxy instance is
+				exportable and transferable to other Galaxy instances,
+				allowing them security and peace of mind that their data is
+				under their control.
+			</p>
+			<hr />
+
+
+
+			<h3>Get Galaxy</h3>
+			<h4>for Developers and Small Groups</h4>
+			<p>
+				If you're just one person, a complete Galaxy setup with a cluster backing it might be overkill! For
+				smaller users who may just want to play around with Galaxy we offer pre-built 
+				<a href="https://images.galaxyproject.org/planemo/">Virtual Machines</a>,
+				a base <a href="https://hub.docker.com/r/bgruening/galaxy-stable/">Docker Image</a>, and a number of
+				variant <a href="https://github.com/search?q=user%3Abgruening+docker-galaxy">Docker Galaxy Flavours</a>
+				specialised for different types of analysis.
+			</p>
+
+			<h4>for the Cloud</h4>
+			<p>
+				<img class="pimg" align="left" src="https://wiki.galaxyproject.org/Images/GalaxyLogos?action=AttachFile&do=get&target=cloudman-logo.png" >
+				For running Galaxy on the cloud, we built <a href="https://launch.usegalaxy.org/launch">Galaxy Cloud Launch</a>
+				on top of <a href="https://github.com/galaxyproject/cloudman">CloudMan</a>. With a simple form, you can
+				spin up as large or small of a Galaxy Instance as you need, on your preferred IaaS compute
+				infrastructure. Our publicly-available Cloud Launch only supports AWS EC2. CloudMan helps you manage the
+				entire lifecycle of your temporary compute infrastructure, from instantiation, to dynamic scaling, to
+				cleanup of resources when you're done with your analysis.
+			</p>
+
+			<h4>for Enterprise-grade Galaxies</h4>
+			<p>For SysAdmins and HPC/Cluster maintainers, the Galaxy Project
+			has built a few tools to help ease the installation process. 
+			</p>
+
+			<hr />
+
+			<h3>Galaxy Tools: Use and Development</h3>
+			<h4>The Toolshed</h4>
+			<p>
+				The <a href="https://toolshed.g2.bx.psu.edu">Galaxy Toolshed</a>
+				offers a place to publish your tools (bioinformatics software wrappers) and discover new ones.
+				The Toolshed allows Galaxy administrators to evaluate and
+				install Galaxy tools for their local instance.
+			</p>
+			<h4>Software Integration and Testing</h4>
+			<p>
+				<img class="pimg" align="left" src="https://cdn.rawgit.com/galaxyproject/planemo/master/docs/planemo_logo.png" >
+				<a href="https://github.com/galaxyproject/planemo">Planemo</a>
+				is our standout tool which allows for designing and building
+				software interfaces between the Galaxy analysis system and your
+				bioinformatics tools.
+			</p>
+			<p>
+				Planemo can do it all! It covers the entire tool lifecycle, from
+				helping you <a href="http://planemo.readthedocs.org/en/latest/writing.html">write new Galaxy tools</a>,
+				to easing the pain points of <a href="http://planemo.readthedocs.org/en/latest/writing_advanced.html?highlight=testing#test-driven-development">tool testing</a>, to
+				getting your tools <a href="http://planemo.readthedocs.org/en/latest/publishing.html">published in our toolshed and available</a>
+				to people around the world!
+			</p>
+			<h4>StarForge</h4>
+			<p>
+				<a href="https://github.com/galaxyproject/starforge/">StarForge</a> exists to build Galaxy dependencies,
+				wheels, and other things, in Docker. With it, you can reproducibly build Galaxy Toolshed Dependencies,
+				and the Galaxy Team can build our python wheels which we use to ship Galaxy's requirements.
+			</p>
+			<h4>bioaRchive</h4>
+			<p>
+				The bioaRchive is a project by the Galaxy Team to store all
+				versions of bioaRchive packages, helping with reproducibility
+				of Bioconductor R package installation.
+			</p>
+			<h4>The Community Package Cache</h4>
+			<p>
+				The CPC is a new experiment to help long-term reproducibility and maintenance of Galaxy tools.
+				It provides a long-term permanent storage of genomic tool
+				binaries. Say you need a particular version of a perl package,
+				but are concerned that the author might one day remove it, the CPC is the
+				<a href="https://github.com/erasche/community-package-cache">resource you want</a>!
+			</P>
+
+			<hr />
+
+
+
+
+			<h3>Build on top of Galaxy</h3>
+			<p>
+				Perhaps you have additional functionality you wish to build on
+				top of Galaxy that may not be appropriate for direct inclusion.
+				Take advantage of <a href="https://github.com/galaxyproject/bioblend">BioBlend</a>,
+				our python library to talk to Galaxy's API. 
+			</p>
+			
+
+
+
+		</div>
+	</div>
+	</body>
+</html>
