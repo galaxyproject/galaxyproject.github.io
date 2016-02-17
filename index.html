@@ -4,6 +4,8 @@
   <title>The Galaxy Project: Data-intensive Science for Everyone</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link href="static/style.css" media="screen" rel="Stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 </head>
 <body>
 	<script>
@@ -36,22 +38,29 @@
 			</p>
 
 			<h3>Human-Friendly Science</h3>
-			<p>
-				<img class="pimg" alt="Galaxy Project Logo" align="left" src="static/galaxyproject.jpg" >
-				<a href="https://github.com/galaxyproject/galaxy">Galaxy</a> is our first and primary product, an open
-				source (AFL) workflow engine enabling rapid analysis on your compute infrastructure.
-				Galaxy itself enables you or your researchers to do reproducible analyses, an absolute
-				necessity in the realm of science.
-			</p>
-			<p>
-				Galaxy additionally allows design and execution of complex MapReduce-type workflows, giving power users
-				command of complex pipelines, and all of your users the ability to remix analyses to suit their own
-				needs.
-			</p>
-			<p>
-				All of the work researchers do on a Galaxy instance is exportable and transferable to other Galaxy
-				instances, allowing them security and peace of mind that their data is under their control.
-			</p>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="https://github.com/galaxyproject/galaxy">
+						<img class="pimg" alt="Galaxy Project Logo" align="left" src="static/galaxyproject.jpg" >
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						<a href="https://github.com/galaxyproject/galaxy">Galaxy</a> is our first and primary product, an open
+						source (AFL) workflow engine enabling rapid analysis on your compute infrastructure.
+						Galaxy itself enables you or your researchers to do reproducible analyses, an absolute
+						necessity in the realm of science.
+					</p>
+					<p>
+						Galaxy additionally allows design and execution of complex MapReduce-type workflows, giving power users
+						command of complex pipelines, and all of your users the ability to remix analyses to suit their own
+						needs.
+					</p>
+					<p>
+						All of the work researchers do on a Galaxy instance is exportable and transferable to other Galaxy
+						instances, allowing them security and peace of mind that their data is under their control.
+					</p>
+				</div>
 			<hr />
 
 
@@ -70,27 +79,43 @@
 				manager) may ease your deployment experience.
 			</p>
 			<h4>for the Cloud</h4>
-			<p>
-				<img class="pimg" alt="CloudMan" align="left" src="static/cloudman-logo.png" >
-				For running Galaxy on the cloud, we built <a href="https://launch.usegalaxy.org/launch">Galaxy Cloud Launch</a>
-				on top of <a href="https://github.com/galaxyproject/cloudman">CloudMan</a>. With a simple form, you can
-				spin up as large or small of a Galaxy Instance as you need, on your preferred IaaS compute
-				infrastructure. Our publicly-available Cloud Launch only supports AWS EC2. CloudMan helps you manage the
-				entire lifecycle of your temporary compute infrastructure, from instantiation, to dynamic scaling, to
-				cleanup of resources when you're done with your analysis.
-			</p>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="https://launch.usegalaxy.org/launch">
+						<img class="pimg" alt="CloudMan" align="left" src="static/cloudman-logo.png" >
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						For running Galaxy on the cloud, we built <a href="https://launch.usegalaxy.org/launch">Galaxy Cloud Launch</a>
+						on top of <a href="https://github.com/galaxyproject/cloudman">CloudMan</a>. With a simple form, you can
+						spin up as large or small of a Galaxy Instance as you need, on your preferred IaaS compute
+						infrastructure. Our publicly-available Cloud Launch only supports AWS EC2. CloudMan helps you manage the
+						entire lifecycle of your temporary compute infrastructure, from instantiation, to dynamic scaling, to
+						cleanup of resources when you're done with your analysis.
+					</p>
+				</div>
+			</div>
 			<h4>for Enterprise-grade Galaxies</h4>
-			<p>
-				<img class="pimg" alt="Pulsar" align="left" src="static/pulsar.png">
-				For SysAdmins and HPC/Cluster maintainers, the Galaxy workflow engine interacts with DRMAA
-				Compatible Schedulers, and has native support for HTCondor. The Galaxy Project has also built a few
-				tools to help ease your installation process. <a href="https://github.com/galaxyproject/pulsar">Pulsar</a> allows you to have
-				Galaxy run jobs on remote systems (including Windows), without a shared file system. For your
-				configuration and deployment needs, we've written <a href="https://github.com/galaxyproject/infrastructure-playbook">
-				Ansible playbooks</a> and even published the <a href="https://github.com/galaxyproject/usegalaxy-playbook">
-				ones we use to deploy UseGalaxy.org</a>. There are <a href="https://github.com/galaxyproject/ansible-galaxy-tools">
-				further sets of roles</a> to help you manage all of the tools your users will ask you for.
-			</p>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="https://github.com/galaxyproject/pulsar">
+						<img class="pimg" alt="Pulsar" align="left" src="static/pulsar.png">
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						For SysAdmins and HPC/Cluster maintainers, the Galaxy workflow engine interacts with DRMAA
+						Compatible Schedulers, and has native support for HTCondor. The Galaxy Project has also built a few
+						tools to help ease your installation process. <a href="https://github.com/galaxyproject/pulsar">Pulsar</a> allows you to have
+						Galaxy run jobs on remote systems (including Windows), without a shared file system. For your
+						configuration and deployment needs, we've written <a href="https://github.com/galaxyproject/infrastructure-playbook">
+						Ansible playbooks</a> and even published the <a href="https://github.com/galaxyproject/usegalaxy-playbook">
+						ones we use to deploy UseGalaxy.org</a>. There are <a href="https://github.com/galaxyproject/ansible-galaxy-tools">
+						further sets of roles</a> to help you manage all of the tools your users will ask you for.
+					</p>
+				</div>
+			</div>
 			<hr />
 
 
@@ -104,20 +129,28 @@
 				install Galaxy tools for their local instance.
 			</p>
 			<h4>Software Integration and Testing</h4>
-			<p>
-				<img class="pimg" alt="Planemo" align="left" src="static/planemo.png" >
-				<a href="https://github.com/galaxyproject/planemo">Planemo</a>
-				is our standout tool which allows for designing and building
-				software interfaces between the Galaxy analysis system and your
-				tools.
-			</p>
-			<p>
-				Planemo can do it all! It covers the entire tool lifecycle, from
-				helping you <a href="http://planemo.readthedocs.org/en/latest/writing.html">write new Galaxy tools</a>,
-				to easing the pain points of <a href="http://planemo.readthedocs.org/en/latest/writing_advanced.html?highlight=testing#test-driven-development">tool testing</a>, to
-				getting your tools <a href="http://planemo.readthedocs.org/en/latest/publishing.html">published in our Tool Shed and available</a>
-				to people around the world!
-			</p>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="https://github.com/galaxyproject/planemo">
+						<img class="pimg" alt="Planemo" align="left" src="static/planemo.png" >
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						<a href="https://github.com/galaxyproject/planemo">Planemo</a>
+						is our standout tool which allows for designing and building
+						software interfaces between the Galaxy analysis system and your
+						tools.
+					</p>
+					<p>
+						Planemo can do it all! It covers the entire tool lifecycle, from
+						helping you <a href="http://planemo.readthedocs.org/en/latest/writing.html">write new Galaxy tools</a>,
+						to easing the pain points of <a href="http://planemo.readthedocs.org/en/latest/writing_advanced.html?highlight=testing#test-driven-development">tool testing</a>, to
+						getting your tools <a href="http://planemo.readthedocs.org/en/latest/publishing.html">published in our Tool Shed and available</a>
+						to people around the world!
+					</p>
+				</div>
+			</div>
 
 			<h3>Galaxy Tools: Reproducibility</h3>
 			<p>
@@ -126,12 +159,20 @@
 				that analysis on their own instances of our platform.
 			</p>
 			<h4>StarForge</h4>
-			<p>
-				<img class="pimg" alt="StarForge Logo" align="left" src="static/starforge.png">
-				<a href="https://github.com/galaxyproject/starforge/">StarForge</a> exists to build Galaxy dependencies,
-				wheels, and other things, in Docker. With it, you can reproducibly build Galaxy Tool Shed Dependencies,
-				and the Galaxy Team can build our python wheels which we use to ship Galaxy's requirements.
-			</p>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="https://github.com/galaxyproject/starforge/">
+						<img class="pimg" alt="StarForge Logo" align="left" src="static/starforge.png">
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						<a href="https://github.com/galaxyproject/starforge/">StarForge</a> exists to build Galaxy dependencies,
+						wheels, and other things, in Docker. With it, you can reproducibly build Galaxy Tool Shed Dependencies,
+						and the Galaxy Team can build our python wheels which we use to ship Galaxy's requirements.
+					</p>
+				</div>
+			</div>
 			<br/> <br/>
 			<h4>bioaRchive</h4>
 			<p>
@@ -139,14 +180,23 @@
 				versions of bioaRchive packages, helping with reproducibility
 				of Bioconductor R package installation.
 			</p>
-			<h4>The Community Package Cache</h4>
-			<p>
-				The CPC is a new experiment to help long-term reproducibility and maintenance of Galaxy tools.
-				It provides a long-term permanent storage of genomic tool
-				binaries. Say you need a particular version of a perl package,
-				but are concerned that the author might one day remove it, the CPC is the
-				<a href="https://github.com/erasche/community-package-cache">resource you want</a>!
-			</p>
+			<h4>The Cargo Bay</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="https://github.com/galaxyproject/cargo-port">
+						<img class="pimg" alt="The Cargo Bay" align="left" src="static/cargobay.png" style="padding:1em">
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						Your "Galactic Distribution Center" is a new experiment to help improve
+						long-term reproducibility and maintenance of Galaxy tools.
+						If you've been bitten by upstream resources removing downloads
+						and breaking your Galaxy packages, then
+						<a href="https://depot.galaxyproject.org/software/">this is the resource you want</a>.
+					</p>
+				</div>
+			</div>
 			<hr />
 
 
