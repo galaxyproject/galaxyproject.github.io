@@ -113,7 +113,8 @@ body {
 				specialised for different types of analysis. If you've elected to do a "bare metal" deployment, the
 				<a href="https://github.com/galaxyproject/usegalaxy-playbook">Ansible roles</a> we've published,
 				and <a href="https://github.com/galaxyproject/gravity">Gravity</a> (a Galaxy supervisord configuration
-				manager) may ease your deployment experience.
+				manager) may ease your deployment experience. If you are developing a new flavour,
+				<a href="https://github.com/galaxyproject/ephemeris">ephemeris</a> will significantly simplify the configuration.
 			</p>
 			<h4>for the Cloud</h4>
 			<div class="row">
@@ -154,8 +155,6 @@ body {
 				</div>
 			</div>
 			<hr />
-
-
 
 			<h3>Galaxy Tools: Use and Development</h3>
 			<h4>The Tool Shed</h4>
@@ -241,9 +240,19 @@ body {
 			<p>
 				Perhaps you have additional functionality you wish to build on
 				top of Galaxy that may not be appropriate for direct inclusion.
-				Take advantage of <a href="https://github.com/galaxyproject/bioblend">BioBlend</a>,
-				our python library to talk to Galaxy's API.
+				Take advantage of our various API clients to talk to Galaxy:
 			</p>
+			<ul>
+				<li>
+				<a href="https://github.com/galaxyproject/bioblend">BioBlend</a> (Python)
+				</li>
+				<li>
+				<a href="https://github.com/galaxyproject/blend4php">blend4php</a> (PHP)
+				</li>
+				<li>
+				<a href="https://github.com/jmchilton/blend4j">blend4j</a> (Java)
+				</li>
+			</ul>
 			
 
 		</div>
