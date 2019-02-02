@@ -146,14 +146,82 @@ body {
 						For SysAdmins and HPC/Cluster maintainers, the Galaxy workflow engine interacts with DRMAA
 						Compatible Schedulers, and has native support for HTCondor. The Galaxy Project has also built a few
 						tools to help ease your installation process. <a href="https://github.com/galaxyproject/pulsar">Pulsar</a> allows you to have
-						Galaxy run jobs on remote systems (including Windows), without a shared file system. For your
-						configuration and deployment needs, we've written <a href="https://github.com/galaxyproject/infrastructure-playbook">
-						Ansible playbooks</a> and even published the <a href="https://github.com/galaxyproject/usegalaxy-playbook">
-						ones we use to deploy UseGalaxy.org</a>. There are <a href="https://github.com/galaxyproject/ansible-galaxy-tools">
-						further sets of roles</a> to help you manage all of the tools your users will ask you for.
+						Galaxy run jobs on remote systems (including Windows), without a shared file system.
 					</p>
 				</div>
 			</div>
+			<h4>for Everywhere</h4>
+			<div class="row">
+				<div class="col-md-3">
+					<a href="ansible">
+						<img class="pimg" alt="Galaxy + Ansible" align="left" src="static/galaxy+ansible.png">
+					</a>
+				</div>
+				<div class="col-md-9">
+					<p>
+						<a href="https://www.ansible.com/">Ansible</a> is a popular automation tool for system administration. The
+						Galaxy Project has created and published a large number of reusable <a
+						href="https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html">Ansible Roles</a> that are
+						<a href="https://galaxy.ansible.com/galaxyproject">published on Ansible Galaxy</a>. In addition, the <a
+						href="https://docs.ansible.com/ansible/latest/user_guide/playbooks.html">Ansible Playbooks</a> used to <a
+						href="https://github.com/galaxyproject/usegalaxy-playbook">manage UseGalaxy.org</a> are published for your
+						reference on how UseGalaxy.org is configured and run, plus as examples on how the roles can be used.
+						For detailed training on how to use these roles, Galaxy Project has published <a href="https://galaxyproject.github.io/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html">a detailed tutorial</a> for setting up a production Galaxy with the Ansible roles
+
+						<h5>Roles for Galaxy and other software developed by The Galaxy Project</h5>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-galaxy">galaxy</a>, for installing a
+							<a href="https://github.com/galaxyproject/galaxy">Galaxy</a> server.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-galaxy-tools">galaxy-tools</a>, for automating tool installation to a
+							Galaxy server.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-pulsar">galaxy</a>, for installing Galaxy's remote job execution engine,
+							<a href="https://github.com/galaxyproject/pulsar">Pulsar</a>.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-repos">repos</a>, for enabling Galaxy Project maintained apt/yum
+							repositories.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-interactive-environments">interactive-environments</a>, for configuring
+							<a href="https://docs.galaxyproject.org/en/master/admin/interactive_environments.html">Galaxy Interactive Environments</a>.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-trackster">trackster</a>, for configuring Galaxy's visualization
+							environment, <a href="https://galaxyproject.org/learn/visualization/">Trackster</a>.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-toolshed">toolshed</a>, for installing a
+							<a href="https://galaxyproject.org/toolshed/">Galaxy Tool Shed</a> server.
+						</p>
+						<h5>Roles for software used by Galaxy</h5>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-postgresql">postgresql</a>, for installing and managing a
+							<a href="https://www.postgresql.org/">PostgreSQL</a> database server.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-nginx">nginx</a>, for installing and managing an
+							<a href="http://nginx.org/">nginx</a> web/proxy server.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-cvmfs">cvmfs</a>, for installing and managing a
+							<a href="https://cernvm.cern.ch/portal/filesystem">CernVM File System (CVMFS)</a> deployment (client and server).
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-proftpd">proftpd</a>, for installing and managing a
+							<a href="http://www.proftpd.org/">ProFTPD</a> FTP server.
+						</p>
+						<p>
+							<a href="https://github.com/galaxyproject/ansible-slurm">slurm</a>, for installing and managing the
+							<a href="https://cernvm.cern.ch/portal/filesystem">Slurm Workload Manager</a>.
+						</p>
+					</p>
+				</div>
+			</div>
+
 			<hr />
 
 			<h3>Galaxy Tools: Use and Development</h3>
